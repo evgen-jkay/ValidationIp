@@ -7,7 +7,7 @@ public class IPv4ValidationRegex {
 
     private static final Pattern pattern = Pattern.compile(IPV4_PATTERN);
 
-    public boolean isValid(final String ip) {
+    public static boolean isValid(final String ip) {
         Matcher matcher = pattern.matcher(ip);
         return matcher.matches();
     }

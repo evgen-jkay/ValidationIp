@@ -31,7 +31,7 @@ public class BlackList {
         return builder;
     }
 
-    public static void blackListCheck() {
+    public static void blackListCheck(String inputIp) {
         Scanner scanner = new Scanner(System.in);
         String userInput = scanner.nextLine();
         String filePath = "src/main/resources/blacklist.txt";
