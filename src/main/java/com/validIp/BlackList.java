@@ -1,10 +1,11 @@
+package com.validIp;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.util.Scanner;
 
 public class BlackList {
-    public static StringBuilder readFile(String path) {
+    public StringBuilder readFile(String path) {
         File file = new File(path);
         StringBuilder builder = new StringBuilder();
 
@@ -31,12 +32,10 @@ public class BlackList {
         return builder;
     }
 
-    public static void blackListCheck(String inputIp) {
-        Scanner scanner = new Scanner(System.in);
-        String userInput = scanner.nextLine();
+    public void blackListCheck (String inputIp) {
         String filePath = "src/main/resources/blacklist.txt";
 
-        int index = readFile(filePath).indexOf(userInput);
+        int index = readFile(filePath).indexOf(inputIp);
 
         if (index > -1) {
             System.out.println("Access disallowed");
