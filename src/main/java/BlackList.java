@@ -34,7 +34,7 @@ public class BlackList {
     public static void blackListCheck() {
         Scanner scanner = new Scanner(System.in);
         String userInput = scanner.nextLine();
-        String filePath = "";
+        String filePath = "src/main/resources/blacklist.txt";
 
         int index = readFile(filePath).indexOf(userInput);
 
