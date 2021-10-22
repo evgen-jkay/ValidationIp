@@ -3,6 +3,7 @@ package com.validIp;
 import java.util.Scanner;
 
 public class ValidationIp {
+
     public static String inputIp;
 
     public static void main(String[] args) {

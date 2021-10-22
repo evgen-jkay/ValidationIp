@@ -32,7 +32,7 @@ public class BlackList {
         return builder;
     }
 
-    public void blackListCheck (String inputIp) {
+    public void blackListCheck(String inputIp) {
         String filePath = "src/main/resources/blacklist.txt";
 
         int index = readFile(filePath).indexOf(inputIp);
