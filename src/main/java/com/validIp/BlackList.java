@@ -33,9 +33,13 @@ public class BlackList {
     }
 
     public void blackListCheck(String inputIp) {
-        String filePath = "src/main/resources/blacklist.txt";
+        // String filePath = "src/main/resources/blacklist.txt";
+        
+        String path = ValidationIp.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        path = new File(path).getParent();
+        InputStream file = new FileInputStream(path + "/blacklist.txt");
 
-        int index = readFile(filePath).indexOf(inputIp);
+        int index = readFile(file).indexOf(inputIp);
 
         if (index > -1) {
             System.out.println("Access disallowed");
