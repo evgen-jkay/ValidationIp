@@ -24,12 +24,15 @@ public class ValidationIp {
             System.out.println("Enter IP address or 'quit' to exit");
             inputIp = scanner.nextLine();
 
+            if (inputIp.equalsIgnoreCase("quit")) System.exit(0);
+
             if (!IPv4ValidatorRegex.isValid(inputIp)) {
                 System.out.println("Invalid IP address");
             } else {
                 blackListCheck.blackListCheck(inputIp);
             }
         } while (!inputIp.equalsIgnoreCase("quit"));
+
         scanner.close();
     }
 }
