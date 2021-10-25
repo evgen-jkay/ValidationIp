@@ -1,5 +1,9 @@
 package com.validIp;
 
+/**
+ * @author - Евгений Ландаренко
+ */
+
 import java.util.Scanner;
 
 public class ValidationIp {
