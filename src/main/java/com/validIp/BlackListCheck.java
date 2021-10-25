@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
-public class BlackList {
+public class BlackListCheck {
     public StringBuilder readFile(String path) {
         File file = new File(path);
         StringBuilder builder = new StringBuilder();
@@ -33,13 +33,9 @@ public class BlackList {
     }
 
     public void blackListCheck(String inputIp) {
-        // String filePath = "src/main/resources/blacklist.txt";
-        
-        String path = ValidationIp.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-        path = new File(path).getParent();
-        InputStream file = new FileInputStream(path + "/blacklist.txt");
+        String filePath = ValidationIp.PATH_DIR + ValidationIp.BLACK_LIST;
 
-        int index = readFile(file).indexOf(inputIp);
+        int index = readFile(filePath).indexOf(inputIp);
 
         if (index > -1) {
             System.out.println("Access disallowed");
@@ -47,4 +43,6 @@ public class BlackList {
             System.out.println("Access allowed");
         }
     }
+
+
 }
