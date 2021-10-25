@@ -6,8 +6,14 @@ public class ValidationIp {
 
     public static String inputIp;
 
+    public static final String BLACK_LIST = "blacklist.txt";
+    public static final String PATH_DIR = "src/main/resources/";
+
     public static void main(String[] args) {
-        BlackList blackList = new BlackList();
+        FileWatcherChenged fileWatcherChenged = new FileWatcherChenged();
+        fileWatcherChenged.start();
+
+        BlackListCheck blackListCheck = new BlackListCheck();
         Scanner scanner = new Scanner(System.in);
 
         do {
@@ -17,7 +23,7 @@ public class ValidationIp {
             if (!IPv4ValidatorRegex.isValid(inputIp)) {
                 System.out.println("Invalid IP address");
             } else {
-                blackList.blackListCheck(inputIp);
+                blackListCheck.blackListCheck(inputIp);
             }
         } while (!inputIp.equalsIgnoreCase("quit"));
         scanner.close();
