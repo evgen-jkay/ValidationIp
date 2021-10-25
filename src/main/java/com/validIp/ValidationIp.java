@@ -11,7 +11,7 @@ public class ValidationIp {
     public static String inputIp;
 
     public static final String BLACK_LIST = "blacklist.txt";
-    public static final String PATH_DIR = "src/main/resources/";
+    public static final String PATH_DIR = "./";
 
     public static void main(String[] args) {
         FileWatcherChenged fileWatcherChenged = new FileWatcherChenged();
