@@ -1,7 +1,11 @@
 package com.validIp;
 
 /**
- * @author - Евгений Ландаренко
+ * Поток который мониторит на лету изменения в файле
+ *
+ * @author      Eugen Landarenko
+ * @version     1.0
+ * @link        https://github.com/evgen-jkay/ValidationIp
  */
 
 import java.io.IOException;

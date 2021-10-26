@@ -1,7 +1,11 @@
 package com.validIp;
 
 /**
- * @author - Евгений Ландаренко
+ * Клас обработки ВАЛИДНЫХ IP адресов
+ *
+ * @author      Eugen Landarenko
+ * @version     1.0
+ * @link        https://github.com/evgen-jkay/ValidationIp
  */
 
 import java.io.BufferedReader;
@@ -9,6 +13,11 @@ import java.io.File;
 import java.io.FileReader;
 
 public class BlackListCheck {
+    /**
+     *
+     * @param path      Path to file
+     * @return          comparing strings from input
+     */
     public StringBuilder readFile(String path) {
         File file = new File(path);
         StringBuilder builder = new StringBuilder();
@@ -36,6 +45,9 @@ public class BlackListCheck {
         return builder;
     }
 
+    /**
+     * @param inputIp   Input IP address
+     */
     public void blackListCheck(String inputIp) {
         String filePath = ValidationIp.PATH_DIR + ValidationIp.BLACK_LIST;
 

@@ -1,7 +1,11 @@
 package com.validIp;
 
 /**
- * @author - Евгений Ландаренко
+ * Сравнивае вводимый IP адрес с паттерном
+ *
+ * @author      Eugen Landarenko
+ * @version     1.0
+ * @link        https://github.com/evgen-jkay/ValidationIp
  */
 
 import java.util.regex.Matcher;
@@ -14,8 +18,12 @@ public class IPv4ValidatorRegex {
 
     private static final Pattern pattern = Pattern.compile(IPV4_PATTERN);
 
-    public static boolean isValid(final String ip) {
-        Matcher matcher = pattern.matcher(ip);
+    /**
+     * @param inputIp   Input IP address
+     * @return          true or false
+     */
+    public static boolean isValid(final String inputIp) {
+        Matcher matcher = pattern.matcher(inputIp);
         return matcher.matches();
     }
 

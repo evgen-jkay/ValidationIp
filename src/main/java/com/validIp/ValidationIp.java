@@ -1,9 +1,14 @@
 package com.validIp;
 
 /**
- * @author - Евгений Ландаренко
+ * Входной класс программы.
+ *
+ * @author      Eugen Landarenko
+ * @version     1.0
+ * @link        https://github.com/evgen-jkay/ValidationIp
  */
 
+import java.io.File;
 import java.util.Scanner;
 
 public class ValidationIp {
