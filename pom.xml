@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.evgen-jkay</groupId>
-    <artifactId>jjd</artifactId>
+    <artifactId>ValidationIp</artifactId>
     <packaging>jar</packaging>
     <version>1</version>
     <name>ValidationIp</name>
-    <description>Testing tast</description>
+    <description>Консольное приложение для проверки IP адресса на валидность и черный список</description>
     <url>https://github.com/evgen-jkay/ValidationIp</url>
 
     <properties>
@@ -42,7 +42,7 @@
             </resource>
         </resources>
 
-        <finalName>jjd1</finalName>
+        <finalName>ValidationIp</finalName>
 
         <plugins>
             <plugin>
