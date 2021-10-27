@@ -21,7 +21,7 @@
 ###### `blacklist.txt` должен находиться возле `ValidationIp.jar` архива
 
 ### Запуск: 
-######Из командной строки:
+###### Из командной строки:
 ```shell
 $ java -jar ValidationIp.jar
 ```
