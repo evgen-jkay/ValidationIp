@@ -14,7 +14,7 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/evgen-jkay/ValidationIp)
 ![GitHub last commit](https://img.shields.io/github/last-commit/evgen-jkay/ValidationIp)
 ![GitHub top language](https://img.shields.io/github/languages/top/evgen-jkay/ValidationIp)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/evgen-jkay/ValidationIp)******
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/evgen-jkay/ValidationIp)
 
 ### Консольное приложение для проверки IP адреса на валидность и черный список
 ###### Программа считывает IP адресса с файла `blacklist.txt`
