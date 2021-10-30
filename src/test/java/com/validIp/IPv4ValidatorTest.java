@@ -13,13 +13,13 @@ public class IPv4ValidatorTest {
     @ParameterizedTest(name = "#{index} - Run test with IPv4 = {0}")
     @MethodSource("validIPv4Provider")
     void test_ipv4_regex_valid(String ipv4) {
-        assertTrue(IPv4ValidatorRegex.isValid(ipv4));
+        assertTrue(IPv4Validator.isValid(ipv4));
     }
 
     @ParameterizedTest(name = "#{index} - Run test with IPv4 = {0}")
     @MethodSource("invalidIPv4Provider")
     void test_ipv4_regex_invalid(String ipv4) {
-        assertFalse(IPv4ValidatorRegex.isValid(ipv4));
+        assertFalse(IPv4Validator.isValid(ipv4));
     }
 
     static Stream<String> validIPv4Provider() {
