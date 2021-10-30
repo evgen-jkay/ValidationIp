@@ -31,7 +31,7 @@ public class ValidationIp {
 
             if (inputIp.equalsIgnoreCase("quit")) System.exit(0);
 
-            if (!IPv4ValidatorRegex.isValid(inputIp)) {
+            if (!IPv4Validator.isValid(inputIp)) {
                 System.out.println("Invalid IP address");
             } else {
                 blackListCheck.blackListCheck(inputIp);
