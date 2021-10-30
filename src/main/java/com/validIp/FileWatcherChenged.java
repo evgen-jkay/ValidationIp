@@ -22,7 +22,7 @@ public class FileWatcherChenged extends Thread {
         }
     }
 
-    public static void fileWatcher() throws IOException, InterruptedException {
+    private void fileWatcher() throws IOException, InterruptedException {
         final Path path = Paths.get(ValidationIp.PATH_DIR);
         try (final WatchService watchService = FileSystems.getDefault().newWatchService()) {
             final WatchKey watchKey = path.register(watchService, StandardWatchEventKinds.ENTRY_MODIFY);
