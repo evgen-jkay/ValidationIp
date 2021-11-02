@@ -11,9 +11,9 @@ package com.validIp;
 import java.io.IOException;
 import java.nio.file.*;
 
-public class FileWatcherChenged extends Thread {
+private class FileWatcherChenged extends Thread {
     @Override
-    public void run() {
+    private void run() {
         super.run();
         try {
             fileWatcher();
