@@ -42,7 +42,7 @@ public class BlackListCheck {
                 }
             }
         }
-        return builder.toString();
+        return builder;
     }
 
     /**
