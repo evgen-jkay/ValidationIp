@@ -13,7 +13,7 @@ import java.nio.file.*;
 
 private class FileWatcherChenged extends Thread {
     @Override
-    private void run() {
+    public void run() {
         super.run();
         try {
             fileWatcher();
