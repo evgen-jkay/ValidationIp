@@ -49,7 +49,9 @@ public class BlackListCheck {
      * @param inputIp   Input IP address
      */
     public void blackListCheck(String inputIp) {
-        String filePath = ValidationIp.PATH_DIR + ValidationIp.BLACK_LIST;
+        ValidationIp validationIp = new ValidationIp();
+
+        String filePath = validationIp.getPATH_DIR() + validationIp.getBLACK_LIST();
 
         int index = readFile(filePath).indexOf(inputIp);
 

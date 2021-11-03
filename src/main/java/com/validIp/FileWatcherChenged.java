@@ -23,7 +23,9 @@ public final class FileWatcherChenged extends Thread {
     }
 
     private void fileWatcher() throws IOException, InterruptedException {
-        final Path path = Paths.get(ValidationIp.PATH_DIR);
+        ValidationIp validationIp = new ValidationIp();
+
+        final Path path = Paths.get(validationIp.getPATH_DIR());
         try (final WatchService watchService = FileSystems.getDefault().newWatchService()) {
             final WatchKey watchKey = path.register(watchService, StandardWatchEventKinds.ENTRY_MODIFY);
             while (true) {
